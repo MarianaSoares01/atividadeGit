@@ -4,6 +4,7 @@
 	<title>2º Módulo - IF</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<script src="js/script.js"></script>
 </head>
 <body>
 
@@ -42,12 +43,20 @@
 					</div>
 				</li>				
 			</ul>
+
+			<button class="btn btn-info" id="data" onclick="this.innerHTML = Date()">Clique para ver data e hora atuais</button>
+
 			<form class="form-inline my-2 my-lg-0">
 				<input class="form-control mr-sm-2" type="search" placeholder="Pesquisar..." aria-label="Search">
 				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
 			</form>
 		</div>
 	</nav>
+
+	<div class="botoes">
+		<img src="img/luaPreta.png" id="modoNoturno" class="lua" onclick="noturno();">
+		<img src="img/luaBranca.png" id="modoDiurno" class="lua" onclick="diurno();">
+	</div>
 
 
 	<div class="container">
